@@ -1,0 +1,8 @@
+SET TIMEZONE = 'SystemV/PST8PDT';
+DROP TABLE IF EXISTS categories CASCADE;
+
+CREATE TABLE categories (
+  id SERIAL PRIMARY KEY NOT NULL,
+  name VARCHAR(225) NOT NULL,
+  description VARCHAR(225)
+);
